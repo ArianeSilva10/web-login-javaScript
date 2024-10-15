@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Projeto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <input type="text" id="busca" placeholder="pesquisar por titulo">
+    </header>
+
+    <main>
+        <section id="tarefas">
+            <h2>Tarefas <button onclick="novaTarefa()">Nova Tarefa</button></h2>
+            <!-- <h6>Nenhuma tarefa registrada</h6> -->
+            
+            <ul id="lista">
+                <li>
+                    <h5>Titulo da tarefa</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quam fugiat quas vel ad molestias magni, dicta facilis nesciunt doloribus. Dolores optio ratione officia tempore in, deserunt aperiam? Earum, est.
+                    </p>
+                    <div class="actions">
+                        <box-icon name='trash' size='sm'></box-icon>
+                    </div>
+                </li>
+                <li>
+                    <h5>Titulo da tarefa</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quam fugiat quas vel ad molestias magni, dicta facilis nesciunt doloribus. Dolores optio ratione officia tempore in, deserunt aperiam? Earum, est.
+                    </p>
+                </li>
+                <li>
+                    <h5>Titulo da tarefa</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quam fugiat quas vel ad molestias magni, dicta facilis nesciunt doloribus. Dolores optio ratione officia tempore in, deserunt aperiam? Earum, est.
+                    </p>
+                </li>                                
+                <li>
+                    <h5>Titulo da tarefa</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quam fugiat quas vel ad molestias magni, dicta facilis nesciunt doloribus. Dolores optio ratione officia tempore in, deserunt aperiam? Earum, est.
+                    </p>
+                </li>
+                <li>
+                    <h5>Titulo da tarefa</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quam fugiat quas vel ad molestias magni, dicta facilis nesciunt doloribus. Dolores optio ratione officia tempore in, deserunt aperiam? Earum, est.
+                    </p>
+                </li>
+                <li>
+                    <h5>Titulo da tarefa</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quam fugiat quas vel ad molestias magni, dicta facilis nesciunt doloribus. Dolores optio ratione officia tempore in, deserunt aperiam? Earum, est.
+                    </p>
+                </li>                                                
+            </ul>
+
+        </section>
+        <section id="overlay"  onclick="fecharModal()"></section>
+        <div id="criarTarefa" class="modal">
+            <form action="">
+                <h3>Criar Tarefa <box-icon name='x' size="md" onclick="fecharModal()"></box-icon></h3>
+                <label for="titulo">titulo</label>
+                <input type="text" id="titulo">
+
+                <label for="descricao">Descrição</label>
+                <textarea id="descricao"></textarea>
+
+                <button>Criar</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>
