@@ -47,9 +47,12 @@ app.put('/tarefas/:id', (req, res)=>{
 });
 
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Servidor rodando na porta ${PORT}`);
-});
+// const PORT = process.env.PORT || 3000;
+// app.listen(PORT, () => {
+//     console.log(`Servidor rodando na porta ${PORT}`);
+// });
 
-module.exports = app; // exporta a aplicação express para ser utilizada em outro arquivo
+// exporta a aplicação express para ser utilizada em outro arquivo
+module.exports = (req, res) => {
+    app(req, res);
+}
