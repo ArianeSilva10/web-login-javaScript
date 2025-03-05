@@ -24,7 +24,7 @@
       },
       {
         "src": "/api/(.*)",
-        "dest": "/api/server.js"
+        "dest": "/api/tarefas.js"
       },
       {
         "src": "/(.*)",
