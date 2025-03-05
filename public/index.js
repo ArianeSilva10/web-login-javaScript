@@ -9,7 +9,7 @@ function fecharModal() {
 }
 
 function buscarTarefas() {
-    fetch("/api/tarefas,js") // endpoint da api
+    fetch("/tarefas") // endpoint da api
     .then(res => res.json())
     .then(res => {
         inserirTarefas(res)
@@ -39,7 +39,7 @@ function novaTarefa() {
         titulo: titulo.value,
         descricao: descricao.value
     }
-    fetch("/api/tarefas.js",{
+    fetch("/tarefas",{
         method: "POST",
         headers: {
             "Content-type": "application/json"
@@ -56,7 +56,7 @@ function novaTarefa() {
 }
 
 function deletarTarefa(id) {
-    fetch(`/api/tarefas.js/${id}`,{
+    fetch(`/tarefas/${id}`,{
         method: "DELETE",
     })
     .then(res => res.json())
