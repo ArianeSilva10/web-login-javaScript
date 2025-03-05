@@ -12,8 +12,19 @@
     ],
     "routes": [
       {
-        "src": "/(index\\.html|style\\.css|index\\.js)",
-        "dest": "/public/$1"
+        "src": "/style\\.css",
+        "dest": "/public/style.css",
+        "headers": {
+          "Content-Type": "text/css"
+        }
+      },
+      {
+        "src": "/index\\.js",
+        "dest": "/public/index.js"
+      },
+      {
+        "src": "/api/(.*)",
+        "dest": "/api/server.js"
       },
       {
         "src": "/(.*)",
@@ -21,4 +32,3 @@
       }
     ]
   }
-  
